@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.hp.sharedpreference.MainActivity">
+
+    <TextView
+        android:layout_margin="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:id="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/username"
+        android:layout_alignTop="@+id/username"
+        />
+
+    <EditText
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:layout_margin="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/password"
+
+        />
+
+    <EditText
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/username"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_alignParentRight="true"/>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:text="Save"
+        android:id="@+id/save"
+        android:onClick="save"
+        android:layout_below="@+id/password"
+        android:background="#eee"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:background="#eee"
+        android:id="@+id/next"
+        android:onClick="next"
+        android:layout_alignTop="@+id/save"
+        android:layout_toRightOf="@+id/save"/>
+</RelativeLayout>
